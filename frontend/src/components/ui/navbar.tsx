@@ -42,7 +42,7 @@ const Navbar = () => {
           </ul>
         </div>
         {isOpen ? (
-          <div className="fixed top-0 left-0 flex h-1/4 w-screen items-center justify-center bg-white shadow-xl">
+          <div className="fixed top-0 left-0 z-10 flex h-full w-screen items-center justify-center bg-white shadow-xl">
             <ul className="flex flex-col gap-4 font-medium">
               {links.map((link) => (
                 <li key={link.href}>

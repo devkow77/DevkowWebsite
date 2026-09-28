@@ -1,4 +1,5 @@
 import Container from "./container";
 import Navbar from "./navbar";
+import PortfolioCard from "./portfolio-card";
 
-export { Container, Navbar };
+export { Container, Navbar, PortfolioCard };
