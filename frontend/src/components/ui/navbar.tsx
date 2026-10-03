@@ -47,7 +47,7 @@ const Navbar = () => {
         </div>
         <a
           href="#portfolio"
-          className="rounded-4xl border-2 border-black/10 px-3 py-2 text-xs font-semibold duration-200 hover:bg-black hover:text-white sm:block sm:px-4 sm:text-sm dark:hover:bg-white dark:hover:text-black"
+          className="rounded-4xl border-2 border-black/10 px-3 py-2 text-xs font-semibold duration-200 hover:bg-black hover:text-white sm:block sm:px-4 sm:text-sm dark:border-white/20 dark:hover:bg-white dark:hover:text-black"
         >
           Zobacz projekty
         </a>

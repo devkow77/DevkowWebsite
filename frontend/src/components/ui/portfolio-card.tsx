@@ -11,7 +11,7 @@ const PortfolioCard = ({ project }: { project: Project }) => {
       aria-label={`Projekt ${project.title}`}
       className="group cursor-pointer space-y-2 rounded-xl transition-shadow duration-300 lg:space-y-4 lg:border-2 lg:border-black/5 lg:p-4 lg:hover:shadow-xl dark:lg:border-white/20 dark:lg:hover:shadow-white/10"
     >
-      <div className="relative grid h-50 w-full place-items-center overflow-hidden rounded-tl-xl rounded-tr-xl bg-black xl:h-60 dark:bg-white">
+      <div className="relative grid h-50 w-full place-items-center overflow-hidden rounded-xl bg-black xl:h-60 dark:bg-white">
         {project.image ? (
           <img
             src={project.image}
@@ -20,7 +20,7 @@ const PortfolioCard = ({ project }: { project: Project }) => {
             height="384"
             loading="lazy"
             decoding="async"
-            className="absolute size-full rounded-tl-xl rounded-tr-xl object-cover object-center transition-transform duration-300 group-hover:scale-105"
+            className="l rounded--xl absolute size-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <ImageOff className="size-10 text-white xl:size-12 dark:text-black" />
