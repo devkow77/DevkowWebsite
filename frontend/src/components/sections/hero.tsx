@@ -21,8 +21,14 @@ const Hero = () => {
         </div>
         <div
           aria-hidden="true"
-          className="hidden rotate-45 rounded-2xl bg-black 2xl:block 2xl:size-60 dark:bg-white"
-        />
+          className="relative hidden flex-1 2xl:block 2xl:size-60"
+        >
+          <img
+            src="./model.png"
+            alt="Mobile Main Mockup"
+            className="absolute h-full w-full scale-140 object-cover"
+          />
+        </div>
       </Container>
     </section>
   );
