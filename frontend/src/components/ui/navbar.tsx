@@ -67,7 +67,7 @@ const Navbar = () => {
           {isOpen ? <X size={26} /> : <Menu size={26} />}
         </div>
         <a
-          href="#work"
+          href="#portfolio"
           className="hidden rounded-4xl border-2 border-black/10 px-4 py-2 text-sm font-semibold duration-200 hover:bg-black hover:text-white sm:block"
         >
           Zobacz moje prace

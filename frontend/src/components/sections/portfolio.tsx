@@ -9,7 +9,7 @@ const projects: Project[] = [
     technologies: ["React", "Node.js", "Express", "MongoDB"],
     description:
       "Nowoczesna aplikacja finansowa do zarządzania płatnościami i domowym budżetem.",
-    image: "/color-website.webp",
+    image: "/black-website.webp",
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -31,7 +31,7 @@ const projects: Project[] = [
     technologies: ["React", "Redux", "Tailwind CSS", "Stripe"],
     description:
       "Responsywny sklep internetowy z koszykiem, płatnościami i panelem klienta.",
-    image: "/color-website.webp",
+    image: "/black-website.webp",
     liveUrl: "#",
     githubUrl: "#",
   },

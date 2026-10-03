@@ -43,7 +43,7 @@ const steps: Step[] = [
 
 const Work = () => {
   return (
-    <section id="praca" className="mb-40">
+    <section id="praca">
       <Container>
         <h3 className="mb-4 text-lg font-bold md:text-2xl">
           JAK WYGLĄDA WSPÓŁPRACA

@@ -1,5 +1,5 @@
 import { Navbar } from "./components/ui";
-import { Hero, Portfolio, About, Work } from "./components/sections";
+import { Hero, Portfolio, About, Work, Footer } from "./components/sections";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
         <Portfolio />
         <About />
         <Work />
+        <Footer />
       </main>
     </>
   );
