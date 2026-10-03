@@ -2,9 +2,9 @@ import { Container } from "../ui";
 
 const Footer = () => {
   return (
-    <footer id="kontakt">
+    <footer id="kontakt" className="mt-10 md:mt-20">
       <Container className="text-center text-sm md:text-base">
-        <div className="space-y-2 border-t-2 border-b-2 border-black/10 py-8 md:py-12">
+        <div className="space-y-2 border-t-2 border-b-2 border-black/10 py-8 md:py-12 dark:border-white/20">
           <h3 className="mx-auto max-w-xl text-3xl font-bold md:text-5xl xl:text-6xl">
             STWÓRZMY COŚ NIESAMOWITEGO.
           </h3>
@@ -24,6 +24,7 @@ const Footer = () => {
               href="https://www.instagram.com/_kacperkowalski/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               Instagram
             </a>{" "}
@@ -32,6 +33,7 @@ const Footer = () => {
               href="https://www.facebook.com/profile.php?id=100011588175691"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               Facebook
             </a>{" "}
@@ -40,6 +42,7 @@ const Footer = () => {
               href="https://www.linkedin.com/in/kacper-kowalski-0a286b241/"
               target="_blank"
               rel="noopener noreferrer"
+              className="hover:underline"
             >
               LinkedIn
             </a>

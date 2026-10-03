@@ -1,7 +1,4 @@
 import { Container } from "./index";
-import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
-
 interface Link {
   href: string;
   label: string;
@@ -23,16 +20,6 @@ const links: Link[] = [
 ];
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? "hidden" : "";
-
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
-
   return (
     <nav>
       <Container className="flex items-center justify-between p-6">
@@ -49,28 +36,11 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        {isOpen ? (
-          <div className="fixed top-0 left-0 z-10 flex h-full w-screen items-center justify-center bg-white shadow-xl">
-            <ul className="flex flex-col gap-4 text-lg font-semibold">
-              {links.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href}>{link.label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ) : null}
-        <div
-          onClick={() => setIsOpen(!isOpen)}
-          className="z-10 cursor-pointer sm:hidden"
-        >
-          {isOpen ? <X size={26} /> : <Menu size={26} />}
-        </div>
         <a
           href="#portfolio"
-          className="hidden rounded-4xl border-2 border-black/10 px-4 py-2 text-sm font-semibold duration-200 hover:bg-black hover:text-white sm:block"
+          className="rounded-4xl border-2 border-black/10 px-3 py-2 text-xs font-semibold duration-200 hover:bg-black hover:text-white sm:block sm:px-4 sm:text-sm dark:hover:bg-white dark:hover:text-black"
         >
-          Zobacz moje prace
+          Zobacz projekty
         </a>
       </Container>
     </nav>

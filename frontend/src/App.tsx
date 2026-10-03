@@ -1,8 +1,9 @@
-import { Navbar } from "./components/ui";
+import { ModeToggle, Navbar } from "./components/ui";
 import { Hero, Portfolio, About, Work, Footer } from "./components/sections";
 import { useEffect } from "react";
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
+import { ThemeProvider } from "./components/theme-provider";
 
 function App() {
   useEffect(() => {
@@ -14,16 +15,19 @@ function App() {
   }, []);
 
   return (
-    <>
+    <ThemeProvider defaultTheme="light">
       <Navbar />
       <main className="space-y-10 md:space-y-20">
         <Hero />
         <Portfolio />
         <About />
         <Work />
-        <Footer />
       </main>
-    </>
+      <Footer />
+      <div className="fixed right-4 bottom-4 z-50">
+        <ModeToggle />
+      </div>
+    </ThemeProvider>
   );
 }
 

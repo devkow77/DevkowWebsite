@@ -6,9 +6,9 @@ const PortfolioCard = ({ project }: { project: Project }) => {
   return (
     <section
       aria-label={`Projekt ${project.title}`}
-      className="group cursor-pointer space-y-2 rounded-xl transition-shadow duration-300 lg:space-y-4 lg:border-2 lg:border-black/5 lg:p-4 lg:hover:shadow-xl"
+      className="group cursor-pointer space-y-2 rounded-xl transition-shadow duration-300 lg:space-y-4 lg:border-2 lg:border-black/5 lg:p-4 lg:hover:shadow-xl dark:lg:border-white/20 dark:lg:hover:shadow-white/10"
     >
-      <div className="relative grid h-50 w-full place-items-center overflow-hidden rounded-tl-xl rounded-tr-xl bg-black xl:h-60">
+      <div className="relative grid h-50 w-full place-items-center overflow-hidden rounded-tl-xl rounded-tr-xl bg-black xl:h-60 dark:bg-white">
         {project.image ? (
           <img
             src={project.image}
@@ -16,7 +16,7 @@ const PortfolioCard = ({ project }: { project: Project }) => {
             className="absolute size-full rounded-tl-xl rounded-tr-xl object-cover object-center transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
-          <ImageOff className="size-10 text-white xl:size-12" />
+          <ImageOff className="size-10 text-white xl:size-12 dark:text-black" />
         )}
       </div>
 
@@ -31,14 +31,14 @@ const PortfolioCard = ({ project }: { project: Project }) => {
       <div className="flex items-center gap-x-2 text-white">
         <a
           href={project.liveUrl}
-          className="flex h-10 items-center gap-x-2 rounded-4xl bg-black px-4 text-sm font-medium text-white"
+          className="flex h-10 items-center gap-x-2 rounded-4xl bg-black px-4 text-sm font-medium text-white dark:bg-white dark:text-black"
         >
           <Globe /> Zobacz na żywo
         </a>
         <a
           href={project.githubUrl}
           aria-label={`Kod źródłowy projektu ${project.title}`}
-          className="grid size-10 place-items-center rounded-full bg-black text-2xl text-white"
+          className="grid size-10 place-items-center rounded-full bg-black text-2xl text-white dark:bg-white dark:text-black"
         >
           <FaGithub />
         </a>
