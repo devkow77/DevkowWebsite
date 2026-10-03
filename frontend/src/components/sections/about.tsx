@@ -13,12 +13,13 @@ import { Container } from "../ui";
 
 const About = () => {
   return (
-    <article id="o-mnie">
+    <section id="o-mnie" aria-labelledby="about-heading">
       <Container>
-        <h3 className="mb-4 text-lg font-bold md:text-2xl">O MNIE</h3>
+        <h2 id="about-heading" className="mb-4 text-lg font-bold md:text-2xl">
+          O MNIE
+        </h2>
         <div className="flex flex-col gap-2 xl:flex-row xl:justify-between xl:gap-6">
           <div className="flex flex-col gap-2 md:flex-row md:gap-6">
-            {/* AVATAR */}
             <div
               aria-label="Moje zdjęcie"
               className="relative size-70 min-w-70 rounded-xl md:size-80 md:min-w-80"
@@ -26,10 +27,13 @@ const About = () => {
               <img
                 src="/profilowe.webp"
                 alt="Kacper Kowalski"
+                width="320"
+                height="320"
+                loading="lazy"
+                decoding="async"
                 className="absolute size-full rounded-xl object-cover object-center"
               />
             </div>
-            {/* TEXT */}
             <div className="max-w-xl space-y-2 md:space-y-4">
               <h4 className="text-xl font-semibold lg:text-3xl">
                 Analiza rynku i potrzeb. Dopasowanie do klienta. Zadbanie o
@@ -43,7 +47,10 @@ const About = () => {
                 staram się dopasować się do potrzeb klienta i zapewnić najlepsze
                 rozwiązanie.
               </p>
-              <div className="flex flex-wrap items-center gap-2 text-4xl md:text-5xl">
+              <div
+                aria-hidden="true"
+                className="flex flex-wrap items-center gap-2 text-4xl md:text-5xl"
+              >
                 <BiLogoReact />
                 <BiLogoTypescript />
                 <BiLogoNodejs />
@@ -69,7 +76,7 @@ const About = () => {
           </ul>
         </div>
       </Container>
-    </article>
+    </section>
   );
 };
 

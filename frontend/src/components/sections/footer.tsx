@@ -1,25 +1,34 @@
 import { Container } from "../ui";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer id="kontakt" className="mt-10 md:mt-20">
+    <footer
+      id="kontakt"
+      aria-labelledby="contact-heading"
+      className="mt-10 md:mt-20"
+    >
       <Container className="text-center text-sm md:text-base">
         <div className="space-y-2 border-t-2 border-b-2 border-black/10 py-8 md:py-12 dark:border-white/20">
-          <h3 className="mx-auto max-w-xl text-3xl font-bold md:text-5xl xl:text-6xl">
-            STWÓRZMY COŚ NIESAMOWITEGO.
-          </h3>
-          <a
-            href="mailto:devkow77@gmail.com"
-            className="font-medium underline"
-            target="_blank"
-            rel="noopener noreferrer"
+          <h2
+            id="contact-heading"
+            className="mx-auto max-w-xl text-3xl font-bold md:text-5xl xl:text-6xl"
           >
-            devkow77@gmail.com
-          </a>
+            STWÓRZMY COŚ NIESAMOWITEGO.
+          </h2>
+          <address className="inline not-italic">
+            <a
+              href="mailto:devkow77@gmail.com"
+              className="font-medium underline"
+            >
+              devkow77@gmail.com
+            </a>
+          </address>
         </div>
         <div className="py-4 font-semibold">
           <p>
-            Kacper Kowalski &copy; 2026 | Polska, Rzeszów |{" "}
+            Kacper Kowalski &copy; {currentYear} | Polska, Rzeszów |{" "}
             <a
               href="https://www.instagram.com/_kacperkowalski/"
               target="_blank"

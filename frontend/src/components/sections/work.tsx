@@ -43,16 +43,17 @@ const steps: Step[] = [
 
 const Work = () => {
   return (
-    <section id="praca">
+    <section id="praca" aria-labelledby="work-heading">
       <Container>
-        <h3 className="mb-4 text-lg font-bold md:text-2xl">
+        <h2 id="work-heading" className="mb-4 text-lg font-bold md:text-2xl">
           JAK WYGLĄDA WSPÓŁPRACA
-        </h3>
+        </h2>
         <ul className="grid grid-cols-2 gap-4 text-center text-sm font-semibold sm:grid-cols-3 md:grid-cols-4 md:gap-6 md:text-base lg:grid-cols-5 xl:grid-cols-6">
           {steps.map((step: Step, index: number) => (
             <li key={index}>
               <div
-                className={`mb-2 grid aspect-square place-items-center rounded-full bg-black text-white md:mb-3 ${index === 4 && "border-4 border-black bg-white text-black!"}`}
+                aria-hidden="true"
+                className={`mb-2 grid aspect-square place-items-center rounded-full bg-black text-white md:mb-3 ${index === 4 ? "border-4 border-black bg-white text-black!" : ""}`}
               >
                 <step.icon className={`size-8 sm:size-10`} />
               </div>

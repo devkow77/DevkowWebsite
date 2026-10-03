@@ -21,11 +21,20 @@ const links: Link[] = [
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav aria-label="Główna nawigacja">
       <Container className="flex items-center justify-between p-6">
         <div className="flex items-center gap-4">
-          <h1 className="font-semibold">Kacper Kowalski</h1>
-          <div className="hidden h-full min-h-4 w-0.5 bg-black sm:block"></div>
+          <a
+            href="/"
+            className="font-semibold"
+            aria-label="Kacper Kowalski — strona główna"
+          >
+            Kacper Kowalski
+          </a>
+          <div
+            aria-hidden="true"
+            className="hidden h-full min-h-4 w-0.5 bg-black sm:block"
+          />
           <ul className="hidden items-center gap-4 font-medium sm:flex">
             {links.map((link) => (
               <li key={link.href}>

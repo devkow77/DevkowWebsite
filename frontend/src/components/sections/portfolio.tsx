@@ -61,9 +61,14 @@ const projects: Project[] = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" aria-labelledby="portfolio-heading">
       <Container>
-        <h3 className="mb-4 text-lg font-bold md:text-2xl">MOJE PORTFOLIO</h3>
+        <h2
+          id="portfolio-heading"
+          className="mb-4 text-lg font-bold md:text-2xl"
+        >
+          MOJE PORTFOLIO
+        </h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <PortfolioCard key={project.id} project={project} />
