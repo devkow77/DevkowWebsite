@@ -1,7 +1,18 @@
 import { Navbar } from "./components/ui";
 import { Hero, Portfolio, About, Work, Footer } from "./components/sections";
+import { useEffect } from "react";
+import Lenis from "lenis";
+import "lenis/dist/lenis.css";
 
 function App() {
+  useEffect(() => {
+    const lenis = new Lenis({
+      autoRaf: true,
+      duration: 1.2,
+    });
+    return () => lenis.destroy();
+  }, []);
+
   return (
     <>
       <Navbar />
