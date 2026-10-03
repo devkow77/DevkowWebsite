@@ -1,6 +1,6 @@
 import { Container } from "./index";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface Link {
   href: string;
@@ -25,6 +25,14 @@ const links: Link[] = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <nav>
       <Container className="flex items-center justify-between p-6">
@@ -43,7 +51,7 @@ const Navbar = () => {
         </div>
         {isOpen ? (
           <div className="fixed top-0 left-0 z-10 flex h-full w-screen items-center justify-center bg-white shadow-xl">
-            <ul className="flex flex-col gap-4 font-medium">
+            <ul className="flex flex-col gap-4 text-lg font-semibold">
               {links.map((link) => (
                 <li key={link.href}>
                   <a href={link.href}>{link.label}</a>

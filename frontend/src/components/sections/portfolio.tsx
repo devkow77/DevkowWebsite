@@ -53,7 +53,7 @@ const projects: Project[] = [
     technologies: ["Next.js", "Supabase", "Mapbox", "Tailwind CSS"],
     description:
       "Planer podróży pozwalający zapisywać miejsca i tworzyć własne trasy.",
-    image: "/color-website.webp",
+    image: "",
     liveUrl: "#",
     githubUrl: "#",
   },
@@ -61,9 +61,9 @@ const projects: Project[] = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="mb-20">
+    <section id="portfolio">
       <Container>
-        <h2 className="mb-4 text-lg font-bold md:text-2xl">MOJE PORTFOLIO</h2>
+        <h3 className="mb-4 text-lg font-bold md:text-2xl">MOJE PORTFOLIO</h3>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <PortfolioCard key={project.id} project={project} />
