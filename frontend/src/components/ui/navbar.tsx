@@ -29,11 +29,11 @@ const Navbar = () => {
             className="font-semibold"
             aria-label="Kacper Kowalski — strona główna"
           >
-            Kacper Kowalski
+            devkow.pl
           </a>
           <div
             aria-hidden="true"
-            className="hidden h-full min-h-4 w-0.5 bg-black sm:block"
+            className="hidden h-full min-h-4 w-0.5 bg-black sm:block dark:bg-white"
           />
           <ul className="hidden items-center gap-4 font-medium sm:flex">
             {links.map((link) => (

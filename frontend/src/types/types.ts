@@ -5,8 +5,9 @@ type Project = {
   technologies: string[];
   description: string;
   image: string;
-  liveUrl: string;
   githubUrl: string;
+  liveUrl?: string;
+  downloadUrl?: string;
 };
 
 export type { Project };

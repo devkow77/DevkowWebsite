@@ -41,7 +41,8 @@ const projects: Project[] = [
     description:
       "Aplikacja mobilna dla biegaczy z rysującą się mapą w trakcie biegu, lokalizacją GPS i statystykami użytkownika oraz zapisem historii  na zalogowanym koncie z możliwością podglądu szczegółów biegu.",
     image: "/run4life.png",
-    liveUrl: "#",
+    downloadUrl:
+      "https://drive.usercontent.google.com/download?id=19SCwBm2Hx4OLtobPSu--GfoSKmR6DrX8&export=download&authuser=0",
     githubUrl: "https://github.com/devkow77/Run4Life",
   },
 ];

@@ -1,10 +1,11 @@
 import { FaGithub } from "react-icons/fa";
-import { Globe, ImageOff } from "lucide-react";
+import { Download, Globe, ImageOff } from "lucide-react";
 import type { Project } from "../../types/types";
 
 const PortfolioCard = ({ project }: { project: Project }) => {
-  const hasLiveUrl = project.liveUrl !== "#";
-  const hasGithubUrl = project.githubUrl !== "#";
+  const hasLiveUrl = project.liveUrl !== undefined;
+  const hasGithubUrl = project.githubUrl !== undefined;
+  const hasDownloadUrl = project.downloadUrl !== undefined;
 
   return (
     <article
@@ -36,7 +37,7 @@ const PortfolioCard = ({ project }: { project: Project }) => {
       <p className="text-sm font-medium">{project.description}</p>
 
       <div className="flex items-center gap-x-2 text-white">
-        {hasLiveUrl ? (
+        {hasLiveUrl && (
           <a
             href={project.liveUrl}
             target="_blank"
@@ -45,15 +46,17 @@ const PortfolioCard = ({ project }: { project: Project }) => {
           >
             <Globe aria-hidden="true" /> Zobacz na żywo
           </a>
-        ) : (
-          <span
-            aria-disabled="true"
+        )}
+        {hasDownloadUrl && (
+          <a
+            href={project.downloadUrl}
+            download
             className="flex h-10 items-center gap-x-2 rounded-4xl bg-black px-4 text-sm font-medium text-white dark:bg-white dark:text-black"
           >
-            <Globe aria-hidden="true" /> Zobacz na żywo
-          </span>
+            <Download aria-hidden="true" /> Pobierz APK
+          </a>
         )}
-        {hasGithubUrl ? (
+        {hasGithubUrl && (
           <a
             href={project.githubUrl}
             target="_blank"
@@ -63,15 +66,6 @@ const PortfolioCard = ({ project }: { project: Project }) => {
           >
             <FaGithub aria-hidden="true" />
           </a>
-        ) : (
-          <span
-            role="img"
-            aria-label={`Kod źródłowy projektu ${project.title} — niedostępny`}
-            aria-disabled="true"
-            className="grid size-10 place-items-center rounded-full bg-black text-2xl text-white dark:bg-white dark:text-black"
-          >
-            <FaGithub aria-hidden="true" />
-          </span>
         )}
       </div>
     </article>

@@ -72,7 +72,6 @@ const About = () => {
             <li>SEO Optimization</li>
             <li>AI Automation</li>
             <li>Cloud Integration</li>
-            <li>API Development</li>
           </ul>
         </div>
       </Container>
