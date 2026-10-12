@@ -1,6 +1,6 @@
 # Kacper Kowalski
 
-Strona portfolio. Projektuję strony i aplikacje webowe, UI/UX oraz automatyzacje z AI.
+Strona portfolio. Projektuję strony i aplikacje webowe, UI/UX oraz automatyzacje z AI. <br />
 Live server: https://devkow.vercel.app/
 
 ## Podgląd
