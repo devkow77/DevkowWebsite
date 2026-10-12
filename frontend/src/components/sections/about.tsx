@@ -7,7 +7,7 @@ import {
   BiLogoHtml5,
   BiLogoDocker,
   BiLogoFigma,
-  BiLogoGithub,
+  BiLogoPython,
 } from "react-icons/bi";
 import { Container } from "../ui";
 
@@ -40,12 +40,14 @@ const About = () => {
                 każdy detal. Bezpieczeństwo i stabilność.
               </h4>
               <p className="text-sm font-medium md:text-base">
-                Moja pasja to tworzenie stron internetowych, aplikacji webowych
-                i automatyzacji procesów biznesowych. W swojej pracy stosuję
-                najnowsze technologie i podejścia, aby zapewnić moim klientom
-                najlepsze wyniki. Wiem, że każdy projekt jest inny, dlatego
-                staram się dopasować się do potrzeb klienta i zapewnić najlepsze
-                rozwiązanie.
+                Zajmuję się tworzeniem stron internetowych, aplikacji webowych i
+                automatyzacją procesów biznesowych. Aktualnie jestem studentem 7
+                semestru 3.5 letnich studiów inżynierskich Informatycznych na
+                specjalizacji Aplikacje internetowe na Uniwersytecie
+                Rzeszowskim. W swojej pracy stosuję najnowsze technologie i
+                podejścia, aby zapewnić moim klientom najlepsze wyniki. Wiem, że
+                każdy projekt jest inny, dlatego staram się dopasować się do
+                potrzeb klienta i zapewnić najlepsze rozwiązanie.
               </p>
               <div
                 aria-hidden="true"
@@ -57,9 +59,9 @@ const About = () => {
                 <BiLogoTailwindCss />
                 <BiLogoMongodb />
                 <BiLogoHtml5 />
+                <BiLogoPython />
                 <BiLogoFigma />
                 <BiLogoDocker />
-                <BiLogoGithub />
               </div>
             </div>
           </div>

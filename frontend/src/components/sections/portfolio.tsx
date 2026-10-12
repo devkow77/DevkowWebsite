@@ -5,7 +5,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "SCHRONISKO",
-    category: "Web Application",
+    category: "Aplikacja Webowa",
     technologies: [
       "React",
       "Node.js",
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "DRZEWNA APARTAMENTS",
-    category: "Wordpress Custom Theme",
+    category: "Customowy Motyw Wordpress",
     technologies: ["Wordpress", "PHP", "HTML", "CSS", "Javascript"],
     description:
       "Strona internetowa jako custom motyw wordpress napisany w php, niestety z powodu nieporozumienia strona nie została ukończona.",
@@ -36,7 +36,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "RUN4LIFE",
-    category: "Mobile Fitness App",
+    category: "Aplikacja Mobilna",
     technologies: ["React Native", "TypeScript", "Tailwind CSS", "Expo"],
     description:
       "Aplikacja mobilna dla biegaczy z rysującą się mapą w trakcie biegu, lokalizacją GPS i statystykami użytkownika oraz zapisem historii  na zalogowanym koncie z możliwością podglądu szczegółów biegu.",

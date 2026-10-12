@@ -28,7 +28,8 @@ const Footer = () => {
         </div>
         <div className="py-4 font-semibold">
           <p>
-            Kacper Kowalski &copy; {currentYear} | Polska, Rzeszów |{" "}
+            Wszelkie prawa zastrzeżone - Kacper Kowalski &copy; {currentYear} |
+            Polska, Rzeszów |{" "}
             <a
               href="https://www.instagram.com/_kacperkowalski/"
               target="_blank"

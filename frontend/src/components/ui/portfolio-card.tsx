@@ -21,7 +21,7 @@ const PortfolioCard = ({ project }: { project: Project }) => {
             height="384"
             loading="lazy"
             decoding="async"
-            className="l rounded--xl absolute size-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+            className="absolute size-full rounded-xl object-cover object-center transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <ImageOff className="size-10 text-white xl:size-12 dark:text-black" />
@@ -31,7 +31,7 @@ const PortfolioCard = ({ project }: { project: Project }) => {
       <div>
         <h3 className="text-2xl font-bold lg:text-4xl">{project.title}</h3>
         <p className="font-semibold">{project.category}</p>
-        <p className="text-sm opacity-60">{project.technologies.join(", ")}</p>
+        <p className="text-sm opacity-80">{project.technologies.join(", ")}</p>
       </div>
 
       <p className="text-sm font-medium">{project.description}</p>
